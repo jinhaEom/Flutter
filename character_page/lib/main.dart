@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,  //debug 빨간띠 삭제
       title: 'BBANTO',
       home: Grade(),
     );
@@ -21,7 +22,7 @@ class Grade extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.amber[800],
       appBar: AppBar(
-        title: Text('BBANTO'),
+        title: Text('KaKao Lion'),
         backgroundColor: Colors.amber[700],
         centerTitle: true,
         elevation: 0.0,
@@ -31,6 +32,19 @@ class Grade extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children:  [
+              Center(
+                child: CircleAvatar(
+                  backgroundImage: AssetImage('assets/chimg3.gif'),
+                  backgroundColor: Colors.amber[800],
+                  radius: 60.0,
+                ),
+              ),
+              Divider(
+                height: 60.0,
+                color: Colors.grey[900],
+                thickness: 0.5,
+                endIndent: 30.0,
+              ),
               Text('NAME',
               style: TextStyle(
               color: Colors.white,
@@ -40,7 +54,7 @@ class Grade extends StatelessWidget {
       SizedBox(
         height: 10.0,
       ),
-      Text('BBANTO',
+      Text('Lion',
       style: TextStyle(
         color: Colors.white,
         letterSpacing: 2.0,
@@ -113,6 +127,14 @@ class Grade extends StatelessWidget {
                   ),
                 ],
               ),
+              Center(
+                child: CircleAvatar(
+                  backgroundImage: AssetImage('assets/chimg.png'),
+                  radius: 40.0,
+                  backgroundColor: Colors.amber[800],
+
+                )
+              )
       ],
     ),
     ),
