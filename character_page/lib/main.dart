@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +15,6 @@ class MyApp extends StatelessWidget {
   }
 }
 class Grade extends StatelessWidget {
-  const Grade({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +30,7 @@ class Grade extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children:  [
               Text('NAME',
               style: TextStyle(
               color: Colors.white,
@@ -45,7 +46,73 @@ class Grade extends StatelessWidget {
         letterSpacing: 2.0,
         fontSize: 28.0,
         fontWeight: FontWeight.bold
-      ),),
+      ),
+      ),
+              SizedBox(
+                height: 30.0,
+              ),
+              Text('BBANTO POWER LEVEL',
+                style: TextStyle(
+                    color: Colors.white,
+                    letterSpacing: 2.0
+                ),
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              Text('14',
+                style: TextStyle(
+                    color: Colors.white,
+                    letterSpacing: 2.0,
+                    fontSize: 28.0,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              SizedBox(
+                height:30.0
+              ),
+              Row(
+                children: [
+                  Icon(Icons.check_circle_outline),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text('using lightsaber',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    letterSpacing: 1.0
+                  ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Icon(Icons.check_circle_outline),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text('face hero tattoo',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        letterSpacing: 1.0
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Icon(Icons.check_circle_outline),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text('fire flames',
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        letterSpacing: 1.0
+                    ),
+                  ),
+                ],
+              ),
       ],
     ),
     ),
