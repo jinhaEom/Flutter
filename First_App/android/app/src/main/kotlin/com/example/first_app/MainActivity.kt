@@ -1,4 +1,4 @@
-package com.example.anyfolder
+package com.example.first_app
 
 import io.flutter.embedding.android.FlutterActivity
 
